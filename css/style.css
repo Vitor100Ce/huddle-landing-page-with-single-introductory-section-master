@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   /*  width: 1440px; */
+    background-image: url(../images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+}
+
+.logo{
+    margin-bottom: 3rem;
+}
+
+.logo--img{
+    width: 12.5rem;
+}
+
+.container{
+    margin: 2rem;
+}
