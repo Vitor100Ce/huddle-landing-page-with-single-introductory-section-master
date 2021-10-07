@@ -1,12 +1,18 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-   /*  width: 1440px; */
+    width: 1440px;
     background-image: url(../images/bg-desktop.svg);
     background-color: hsl(257, 40%, 49%);
+    width: 100%;
+}
+
+.container{
+    margin: 4rem;
 }
 
 .logo{
@@ -17,6 +23,165 @@ body{
     width: 12.5rem;
 }
 
-.container{
-    margin: 2rem;
+.illustration{
+    position: absolute;
 }
+
+.content{
+    width: 40%;
+    position: relative;
+    left: 47rem;
+    top: 3rem;
+    color: #fff;
+}
+
+.content__title{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    display: inline-block;
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: hsl(257, 40%, 49%);
+    background-color: #fff;
+    box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.59);
+    border-radius: 1.5rem;
+    transition: all .3s;
+}
+
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.footer{
+    position: absolute;
+    left: 77%;
+    top: 90%;  
+}
+
+.footer i{
+    margin-left: 1rem;
+    border: solid 1px #fff;
+    padding: .5rem;
+    border-radius: 50%;
+    color: #fff;  
+    transition: all .3s;  
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer i:hover{
+    border: solid 1px hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+
+
+
+@media screen and (max-width: 40rem) {
+
+
+    body{
+        background-image:url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .illustration{
+        position: inherit;
+       
+    }
+
+    .illustration__img{
+        width: 25rem;
+    }
+
+    .content{
+        width: 100%;
+        position: inherit;
+        text-align: center;
+        color: #fff;
+    }
+
+    .content__title{
+        font-size: 1.8rem;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+        
+    }
+
+
+    .btn{
+        display: inline-block;
+        width: 15rem;
+        height: 3rem;
+        text-align: center;
+        line-height: 3rem;
+        margin-top: 2rem;
+        text-decoration: none;
+        color: hsl(257, 40%, 49%);
+        background-color: #fff;
+        box-shadow: 0px 4px 15px 1px rgba(0,0,0,0.59);
+        border-radius: 1.5rem;
+        transition: all .3s;
+    }
+
+    .footer{
+        position: inherit;
+        text-align: center;
+        display: block;
+        margin-top: 5rem;
+    }
+
+    .footer i{
+        margin-left: .2rem;
+    
+    }
+
+
+}
+
+@media screen and (min-width: 64rem) {
+    
+    .illustration__img{
+        width: 40.63rem;
+    }
+
+    .content{
+        left: 44rem;
+    }
+
+    .btn{
+      
+        margin-top: 3rem;
+    }
+
+    .footer{
+        position: absolute;
+        left: 77%;
+        top: 100%;  
+      
+    }
+}
+
+@media screen and (min-width: 90rem){
+  
+
+    .footer{
+        position: absolute;
+        left: 77%;
+        top: 90%;  
+    }
+
+}
+
+
